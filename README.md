@@ -1,8 +1,15 @@
 # RallyeLecture
-Ce projet est une application Windows Form réalisée en C# permettant à un professeur d'alimenter une base de données avec un fichier .csv contenant tous les eleves d'une classe.
+Présentation du projet: RallyeLecture est un projet diviser en 2 partie : le site web rallyeLecture avec CodeIgniter ainsi que la librairie de gestion des droits d'accès.Puis une application Windows Form réalisée en C# permettant à un professeur d'alimenter une base de données avec un fichier .csv contenant tous les eleves d'une classe.
 
-L'objectif de cette partie du PPE RallyeLecture n'est autre que la conception d'un programme permettant la réalisation des besoins d'un utilisateur dans un contexte professionnel définis.
+Les outils mis en oeuvre :
 
+* git.
+* Visual studio.
+* SQL.
+* Code Igniter.
+* Fichier csv.
+
+## Premiere Partie (Windows Form)
 Le projet est divisible en 3 grandes parties :
 
 Lecture des informations contenues dans un fichier .csv .
@@ -15,21 +22,13 @@ RallyeLecture C# WindowsForm
 Cas D'utilisation
 RallyeLecture C# Use Case Diagram
 
-Installation & Configuration
-Téléchargez le dossier .Zip sur Github de la solution.
-
-Extrayez les fichiers sources du dossier .../Sources dans un projet de votre choix (exemple : un projet Visual Studio).
-
-Créez une Base de Donnée (Nom au choix) puis insérez-y les scripts rallyelecture_structure.sql et Aauth_v2.sql présent dans le dossier .../Github/Database.
-
-Pour les tests, ajoutez le jeu d'enregistrements rallyelecture_records.sql présent dans le dossier .../Github/Database.
-
 Modifiez dans le fichier source ConnectionMySql.cs dans le dossier .../Sources :
-
+```php
 user = "";  /* Entrez le nom d'utilisateur pour acceder à votre Serveur MySql */
 passWord = "";  /* Entrez le mot de passe pour acceder à votre serveur MySql */
 server = "";  /* Entrez l'adresse IP ou url de votre Serveur MySql */
 database = ""; /* Entrez le nom de la BDD à utiliser */
+```
 Schema BDD
 RallyeLecture C# Schema BDD
 
