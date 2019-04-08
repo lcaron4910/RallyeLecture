@@ -17,33 +17,33 @@ Ecriture d'un fichier .csv avec les informations de connection de chaques eleves
 Alimentation de la base de données avec les informations receuillis.
 Aperçus de l'interface Windows Form :
 
-RallyeLecture C# WindowsForm
+### Cas d'utilisation
 
-Cas D'utilisation
-RallyeLecture C# Use Case Diagram
+![Capture.png](https://image.noelshack.com/fichiers/2019/13/3/1553701046-capture.png)<br>
 
-Modifiez dans le fichier source ConnectionMySql.cs dans le dossier .../Sources :
-```php
-user = "";  /* Entrez le nom d'utilisateur pour acceder à votre Serveur MySql */
-passWord = "";  /* Entrez le mot de passe pour acceder à votre serveur MySql */
-server = "";  /* Entrez l'adresse IP ou url de votre Serveur MySql */
-database = ""; /* Entrez le nom de la BDD à utiliser */
-```
-Schema BDD
-RallyeLecture C# Schema BDD
 
-Schema BDD aauth
-RallyeLecture C# Schema BDD Aauth
+### Diagrammes de classe
 
-Diagrammes de Classes
-Classes métiers
+![Capture2.png](https://image.noelshack.com/fichiers/2019/13/3/1553701172-capture2.png)<br>
+![Capture3.png](https://image.noelshack.com/fichiers/2019/13/3/1553701182-capture3.png)<br>
 
-RallyeLecture C# Class Diagram Job
 
-Classes d'accès aux données
+### Développement
 
-RallyeLecture C# Class Diagram BDD Access
+Nous retrouvons donc deux interfaces Windows Forms :
 
-Classes Techniques
+![Capture.png](https://image.noelshack.com/fichiers/2019/13/3/1553695324-capture.png)<br>
+La première permet à un enseignant (et uniquement à un enseignant) de se connecter à l'application.
 
-RallyeLecture C# Class Diagram Technical
+![Capture2.png](https://image.noelshack.com/fichiers/2019/13/3/1553695327-capture2.png)<br>
+La seconde est donc l'interface principale.
+Nous y retrouvons : 
+* Choix d'un répertoire contenant des csv.
+* Choix du csv à utiliser.
+* Choix de l'année scolaire.
+* Choix du niveau scolaire.
+* Choix de la génération du mot de passe.
+
+### Schéma de la base de données
+![Capture.png](https://image.noelshack.com/fichiers/2019/13/3/1553696893-capture3.png)<br>
+![Capture.png](https://image.noelshack.com/fichiers/2019/13/3/1553696895-capture4.png)
